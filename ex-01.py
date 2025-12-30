@@ -1,5 +1,6 @@
 from math import   pi, radians, degrees, sin, cos, tan, asin, e, exp, log, ceil, floor, trunc
 import math
+from random import random, seed, randrange, randint, uniform
 
 # pi → a constant with a value that is an approximation of π;
 # radians(x) → a function that converts x from degrees to radians;
@@ -45,3 +46,18 @@ print(ceil(x), ceil(y))
 print(ceil(-x), ceil(-y)) # tends to go towards zero
 print(trunc(x), trunc(y)) # It does not round numbers, remove decimals
 print(trunc(-x), trunc(-y)) # It does not round numbers, remove decimals
+
+#
+
+# seed(0) # always same result with method random()
+
+for i in range(5):
+    print(random())
+    
+print(randrange(5), end=' ')
+print(randrange(0, 5), end=' ')
+print(randrange(0, 6, 5), end=' ')
+print(randrange(0, 5, 2), end=' ')
+print(randint(0, 5)) # Return random integer in range [a, b], including both end points.
+
+print(uniform(0, 5)) # decimals result, no controls 'step'
